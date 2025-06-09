@@ -53,39 +53,39 @@ book-review-api/
 ├── .env # Environment Variables
 
 📦 Setup Instructions
-Clone the repo
-git clone https://github.com/sonappatil/bookapi.git
-cd book-review-api
-cd src
+1. Clone the repo
+1. git clone https://github.com/sonappatil/bookapi.git
+2. cd book-review-api
+3. cd src
 
-Install dependencies
-npm install
+2. Install dependencies
+1. npm install
 
-Set up .env file
-Create a .env file in the root directory and add values as shown above.
+3. Set up .env file
+   Create a .env file in the root directory and add values as shown above.
 
-Start MongoDB
-Make sure MongoDB is running locally or provide a connection string to a remote cluster.
+4. Start MongoDB
+   Make sure MongoDB is running locally or provide a connection string to a remote cluster.
 
-Start the server
+5. Start the server
 npm run dev
-# OR
+OR
 node server.js
 
 📬 API Endpoints
 🔐 Authentication
-POST /api/signup – Register a new user
-POST /api/login – Login and receive a JWT token
+1. POST /api/signup – Register a new user
+2. POST /api/login – Login and receive a JWT token
 
 📚 Books
-POST /api/books/postbook – Add a new book (auth required)
-GET /api/books/ – Get all books (pagination, filter by author or genre)
-GET /api/books/:id – Get details of a book (includes average rating + paginated reviews)
+1. POST /api/books/postbook – Add a new book (auth required)
+2. GET /api/books/ – Get all books (pagination, filter by author or genre)
+3. GET /api/books/:id – Get details of a book (includes average rating + paginated reviews)
 
 ✍️ Reviews
-POST /api/books/:id/reviews – Submit a review for a book (auth required, one per book per user)
-PUT /api/reviews/:id – Update your own review
-DELETE /api/reviews/:id – Delete your own review
+1. POST /api/books/:id/reviews – Submit a review for a book (auth required, one per book per user)
+2. PUT /api/reviews/:id – Update your own review
+3. DELETE /api/reviews/:id – Delete your own review
 
 🔍 Search
-GET /api/books/search?query=harry – Search books by title or author (case-insensitive, partial match)
+1. GET /api/books/search?query=harry – Search books by title or author (case-insensitive, partial match)
