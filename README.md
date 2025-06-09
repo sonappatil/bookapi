@@ -54,7 +54,7 @@ book-review-api/
 
 📦 Setup Instructions
 Clone the repo
-git clone https://github.com/your-username/book-review-api.git
+git clone https://github.com/sonappatil/bookapi.git
 cd book-review-api
 cd src
 
